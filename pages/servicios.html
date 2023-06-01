@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KyoSushi</title>
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="../pages/menu.html">Menu</a></li>
+          <li><a href="../pages/servicios.html">Servicios</a></li>
+          <li><a href="../pages/galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+      <a href="../pages/contacto.html" class="contact"><button>Contacto</button></a>
+    </header>
+
+    <section class="servicesSection1">
+      <div class="textServices1">
+        <h1>Nuestros Servicios</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione 
+          ipsum modi ex dicta ipsa, pariatur, vel ab autem officia similique libero cum 
+          amet error eius omnis, possimus rem placeat.</p>
+      </div>
+      <a class="scroll-down-button" href="#section2"><span class="arrow"></span></a>
+    </section>
+    
+    <section class="servicesSection2">
+      <article class="art2container">
+        <img src="../images/catering.jpeg" alt="" class="servicesImg">
+        <div class="textServices2">
+          <h2 class="h2Services">Catering</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae illo 
+            possimus sunt, vel unde delectus recusandae reiciendis nulla at nesciunt 
+            labore itaque impedit, nostrum ut eligendi numquam, deleniti corrupti 
+            eaque!</p>
+        </div>
+      </article>
+      <article class="art2container">
+        <div class="textServices2">
+          <h2 class="h2Services">Degustacion</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo 
+            eum nam voluptas recusandae fuga autem a aspernatur, ut amet voluptate 
+            suscipit, accusamus repudiandae, expedita aperiam provident dolorum et 
+            obcaecati.</p>
+        </div>
+        <img src="../images/degustacion.jpeg" alt="" class="servicesImg">
+      </article>
+      <article class="art2container">
+        <img src="../images/taller.jpeg" alt="" class="servicesImg">
+        <div class="textServices2">
+          <h2 class="h2Services">Taller</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae illo 
+            possimus sunt, vel unde delectus recusandae reiciendis nulla at nesciunt 
+            labore itaque impedit, nostrum ut eligendi numquam, deleniti corrupti 
+            eaque!</p>
+        </div>
+      </article>
+
+    </section>
+      
+    <section class="formColor">
+      <div>
+        <h2>Reserva una actividad</h2>
+      </div>
+      
+      <form action="" class="formText formColor">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido">
+        </div>
+        <div>
+          <label for="evento">Evento</label>
+          <select name="evento" id="evento">
+            <option value="-">-</option>
+            <option value="opcion">Catering</option>
+            <option value="opcion">Degustacion</option>
+            <option value="opcion">Taller</option>
+          </select>
+        </div>
+        <div>
+          <label for="fecha">Fecha</label>
+          <input type="date" name="fecha" id="fecha">
+        </div>
+        <div>
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" placeholder="ejemplo@correo.com">
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+          <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+    <footer class="fondoFooter">
+      <ul class="ulFooter">
+        <li> <img src="../images/instagram.png" class="footerLogos" alt="Instagram">
+          kyosushioficial
+        </li>
+        <li> <img src="../images/gorjeo.png" alt="Twitter" class="footerLogos">
+          kyosushi</li>
+        <li> <img src="../images/facebook.png" alt="Facebook" class="footerLogos">
+          Kyo Sushi</li>
+        <li> <img src="../images/whatsapp.png" alt="Telefono" class="footerLogos">
+          12345789</li>
+        <li> <img src="../images/correo-electronico.png" alt="Correo" class="footerLogos">
+          kyosushi@gmail.com</li>
+      </ul>
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+  </body>
+</html>
