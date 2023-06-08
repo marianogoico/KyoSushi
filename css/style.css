@@ -52,80 +52,64 @@ p {
 
 /*--------------------------------------------------------------------*/
 /* header*/
+.navbar {
+    background-color: #2C363F;
+    padding: 0;
+}
 
-li,
-a,
-button {
+.navbar-brand {
+    margin: 0 0 0 15px;
+}
+
+.brandImg {
+    background-color: #ffffff;
+    border-radius: 40px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.MenuNavegacion {
     font-family: "montserrat";
     font-weight: 500;
-    font-size: 21px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+    font-size: 20px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    background-color: #ffffff;
+.nav-item {
+    margin: 0 2vw 0 2vw;
+    width: fit-content;
 }
 
-.nav-ul {
-    list-style-type: none;
-}
-
-.nav-ul li {
-    display: inline-block;
-    padding: 0 40px;
+.nav-link {
+    color: #F2F5EA;
+    transition: .3s;
 }
 
 
-button {
+.nav-link:hover {
+    color: #bb4242;
+}
+
+.navbar-toggler {
     color: #ffffff;
-    padding: 5px 30px 5px 30px;
-    background-color: #000000;
     border: none;
-    border-top-left-radius: 21px;
-    border-top-right-radius: 21px;
-    border-bottom-right-radius: 21px;
-    border-bottom-left-radius: 21px;
 }
-
-.logo {
-    height: 100px;
-    width: auto;
-}
-
 
 /*-----------------------------------------------------------------*/
 /*footer*/
-
-.fondoFooter {
-    background-color: #ffffff;
+.footer {
+    background-color: #2C363F;
 }
 
-.ulFooter {
-    font-family: 'montserrat';
-    list-style-type: none;
-    font-size: 150%;
-    color: black;
-    padding: 20px 0 10px 0;
-    text-align: center;
+.footerH5 {
+    color: #F2F5EA;
 }
 
-.ulFooter li {
-    display: inline-block;
-    padding: 10px;
-    margin-bottom: 30px;
-}
-
-.footerLogos {
-    height: 40px;
-    width: 40px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
 
 
 /*-----------------------------------------------------------------*/
@@ -139,11 +123,10 @@ button {
 }
 
 .fondoSection1 {
-    height: 90%;
+    height: 100%;
     width: auto;
-    color: #323332;
-    background-color: #ffffff;
-    display: grid;
+    color: #2C363F;
+    background-color: #F2F5EA;
     background-image: url("../images/fondosushi\ \(2\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,32 +140,29 @@ button {
 /*-----------------------------------------------------------------*/
 /*Inicio Seccion2*/
 
-.secondImg {
-    height: 700px;
-    width: auto;
-}
-
 .fondoSection2 {
     color: #fffae2;
     width: auto;
-    height: 120%;
+    min-height: 105%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: #2C363F;
+    background-image: repeating-linear-gradient(90deg, #1c242b 0, #1c242b 20px, transparent 20px, transparent 40px);
     padding: 0;
 }
 
 .textSection2 {
     font-size: 20px;
+    font-weight: 400;
     text-align: left;
-    padding-left: 100px;
     max-width: 400px;
 }
 
 .h2section2 {
-    font-size: 60px;
+    font-size: 70px;
+    font-weight: 500;
     margin-bottom: 50px;
 }
 
@@ -209,7 +189,12 @@ button {
     text-align: center;
 }
 
+.imgContainer {
+    border: 1px solid #000000;
+}
+
 .product-img {
+    padding: 30px;
     width: 100%;
     height: auto;
     border-radius: 2%;
@@ -225,7 +210,7 @@ button {
     font-size: 20px;
 }
 
-.container {
+.contenedor {
     display: flex;
     justify-content: space-evenly;
     height: 90%;
@@ -236,7 +221,7 @@ button {
 /*Servicios*/
 
 .servicesSection1 {
-    color: black;
+    color: #2C363F;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -249,20 +234,12 @@ button {
 .servicesImg {
     width: 40%;
     height: auto;
-    padding: 50px;
-    border: 2px solid black;
-}
-
-.formColor {
-    color: black;
-}
-
-.formText {
-    font-family: 'montserrat';
+    padding: 30px;
+    border: 2px solid #2C363F;
 }
 
 .servicesSection2 {
-    color: rgb(0, 0, 0);
+    color: #2C363F;
     background-color: #ffffff;
 }
 
@@ -286,6 +263,7 @@ button {
     font-size: 50px;
 }
 
+
 /*-----------------------------------------------------------------*/
 /*Menu*/
 
@@ -294,7 +272,7 @@ button {
 }
 
 .menuh1 {
-    color: #000000;
+    color: #2C363F;
     font-family: 'aesthetic';
     font-size: 80px;
     font-weight: 500;
@@ -319,7 +297,7 @@ button {
 
 .section2 {
     background-color: #ffffff;
-    color: #1f1f1f;
+    color: #2C363F;
 }
 
 .menuSection2 {
@@ -357,4 +335,147 @@ h4 {
 .pItem {
     font-weight: 500;
     margin-top: 15px;
+}
+
+/*-----------------------------------------------------------------*/
+/*Galeria*/
+.text-container {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    border: solid 1px rgb(32, 32, 32);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 600px) {
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}
+
+.item1 {
+    background-image: url("../images/sushi2.jpeg");
+}
+
+.item2 {
+    background-image: url("../images/gyoza.jpeg");
+}
+
+.item3 {
+    background-image: url("../images/restaurant1.jpg");
+}
+
+.item4 {
+    background-image: url("../images/geisha.jpg");
+}
+
+.item5 {
+    background-image: url("../images/sushi_eating.jpg");
+}
+
+.item6 {
+    background-image: url("../images/restaurant2.jpg");
+}
+
+.item7 {
+    background-image: url("../images/chefcooking.jpg");
+}
+
+.item8 {
+    background-image: url("../images/ramen.jpeg");
+}
+
+.item9 {
+    background-image: url('../images/people_eating.png');
+}
+
+.item10 {
+    background-image: url("../images/makiroll.jpg");
+}
+
+.item11 {
+    background-image: url(../images/crunchyroll.jpg);
+}
+
+.item12 {
+    background-image: url(../images/miso.jpeg);
+}
+
+/*-----------------------------------------------------------------*/
+/*Contacto*/
+
+.form {
+    padding: 50px;
+    margin: 0 30px 30px 30px;
+    border-radius: 4px;
+    background-color: #2C363F;
+    box-shadow: 3px 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.form-label {
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border: none;
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    font-family: 'montserrat';
+    background-color: #ffff;
+    color: #2C363F;
+    border: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        font-size: 15px;
+    }
+
+    .brandImg {
+        height: 50px;
+        width: auto;
+        background-color: #ffffff;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-container {
+        font-size: 10px;
+    }
 }

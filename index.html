@@ -12,25 +12,31 @@
 
     <!--favicon-->
     <link rel="shortcut icon" href="images/logo.png" />
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body> 
 
-    <header>
-      <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
-      <nav>
-        <ul class="nav-ul">
-          <li><a href="pages/menu.html">Menu</a></li>
-          <li><a href="pages/servicios.html">Servicios</a></li>
-          <li><a href="pages/galeria.html">Galeria</a></li>
-        </ul>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" width="80" height="80" class="brandImg"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+            <span class="fa-solid fa-bars fa-xl"></span>
+          </button>
+          <div id="MenuNavegacion" class="collapse navbar-collapse MenuNavegacion">
+            <ul class="navbar-nav ms-3 nav-ul ul-navbar">
+              <li class="nav-item"><a class="nav-link" href="pages/menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+              <li class="nav-item "><a class="nav-link" href="pages/galeria.html">Galeria</a></li>
+              <li class="nav-item itemNav"><a class="nav-link contact" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <a href="pages/contacto.html" class="contact"><button>Contacto</button></a>
     </header>
-
 
     <section class="fondoSection1">
       <div class="mainContent">
@@ -42,22 +48,19 @@
 
     <section class="fondoSection2">
       <div class="textSection2">
-        <h2 class="h2section2">Sobre nosotros</h2>
+        <h2 class="h2section2">Sobre Nosotros</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere animi ex, 
           provident quidem, laboriosam perferendis, dolor reprehenderit illo pariatur 
           quaerat neque beatae officiis. Doloribus, saepe. Veritatis soluta fugit dolorum
           officia!</p>
       </div>
-      <div class="imgContainer">
-        <img src="images/sushi3.jpeg" alt="imagen de sushi" class="secondImg">
-      </div>
     </section>
     
     <section class="fondoSection3">
         <h2 class="sec3title">Platos Populares</h2>
-      <div class="container">
+      <div class="contenedor">
         <article class="art3container">
-          <div>
+          <div class="imgContainer">
             <img src="images/kaiseki.jpeg" class="product-img" alt="Plato de kaiseki">
           </div>
           <h3 class="textSection3">Kaiseki</h3>
@@ -66,7 +69,7 @@
             , culpa, iste nostrum dolorum dolorem exercitationem voluptatum vitae ut.</p>
         </article>
         <article class="art3container">          
-          <div>
+          <div class="imgContainer">
             <img src="images/sashimi.jpeg" class="product-img" alt="Plato de sashimi">
           </div>
           <h3 class="textSection3">Sashimi</h3>
@@ -75,7 +78,7 @@
             , culpa, iste nostrum dolorum dolorem exercitationem voluptatum vitae ut.</p>
         </article>
         <article class="art3container">
-          <div>
+          <div class="imgContainer">
             <img src="images/soba.jpeg" class="product-img" alt="Plato de soba">
           </div>
           <h3 class="textSection3">Soba</h3>
@@ -86,24 +89,66 @@
       </div>
     </section>
 
+    <footer class="text-light pt-5 pb4 footer">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
 
-    <footer class="fondoFooter">
-      <ul class="ulFooter">
-        <li> <img src="images/instagram.png" class="footerLogos" alt="Instagram">
-          kyosushioficial
-        </li>
-        <li> <img src="images/gorjeo.png" alt="Twitter" class="footerLogos">
-          kyosushi</li>
-        <li> <img src="images/facebook.png" alt="Facebook" class="footerLogos">
-          Kyo Sushi</li>
-        <li> <img src="images/whatsapp.png" alt="Telefono" class="footerLogos">
-          12345789</li>
-        <li> <img src="images/correo-electronico.png" alt="Correo" class="footerLogos">
-          kyosushi@gmail.com</li>
-      </ul>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold footerH5">Sobre Nosotros</h5>
+            <hr class="mb4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore nostrum 
+              sed quibusdam velit, a obcaecati corrupti numquam architecto in pariatur consequuntur 
+              impedit deleniti est, perferendis consectetur eius odit laudantium?
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold footerH5">Paginas</h5>
+            <hr class="mb4">
+            <p>
+              <a href="pages/menu.html" class="nav-link">Menu</a>
+            </p>
+            <p>
+              <a href="pages/galeria.html" class="nav-link">Galeria</a>
+            </p>
+            <p>
+              <a href="pages/servicios.html" class="nav-link">Servicios</a>
+            </p>
+            <p>
+              <a href="pages/contacto.html" class="nav-link">Contacto</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold footerH5">Sociales</h5>
+            <hr class="mb4">
+            <p>
+              <li class="fa-brands fa-instagram me-3"></li>Kyosushioficial
+            </p>
+            <p>
+              <li class="fa-brands fa-facebook me-3"></li>Kyo Sushi
+            </p>
+            <p>
+              <li class="fa-brands fa-twitter me-3"></li>KyoSushiof
+            </p>
+            <p>
+              <li class="fa-solid fa-envelope me-3"></li>kyosushi@gmail.com
+            </p>
+          </div>
+
+          <hr class="mb-4">
+
+          <div class="text-center mb-2">
+            <p>
+              Copyright Todos los derechos reservados
+              <a href="#">Text</a>
+            </p>
+          </div>
+          
+        </div>
+      </div>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
