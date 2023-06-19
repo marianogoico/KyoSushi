@@ -43,10 +43,13 @@ p {
     font-family: 'montserrat';
 }
 
+$azulmarino: #2C363F;
+
 /*--------------------------------------------------------------------*/
 /* header*/
+
 .navbar {
-    background-color: #2C363F;
+    background-color: $azulmarino;
     padding: 0;
 }
 
@@ -79,11 +82,11 @@ p {
         margin-right: 10px;
 
         li {
-            margin: 0 0.5vw 0 0.5vw;
+            margin: 0 0vw 0 0vw;
             width: fit-content;
 
             a {
-                color: #F2F5EA;
+                color: #fffcef;
                 transition: .3s;
 
                 &:hover {
@@ -132,6 +135,7 @@ p {
     background-image: url("../images/fondosushi\ \(2\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -153,7 +157,7 @@ p {
 .fondoSection2 {
     color: #fffae2;
     width: auto;
-    min-height: 105%;
+    min-height: 110%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -207,6 +211,9 @@ p {
     display: inline-block;
     margin: 20px;
     font-size: 20px;
+    box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    -webkit-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    -moz-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
 
     h3 {
         font-size: 40px;
@@ -214,7 +221,8 @@ p {
 }
 
 .imgContainer {
-    border: 1px solid rgb(0, 0, 0);
+    border: 0px solid rgb(245, 245, 245);
+    background-color: #ffffff;
     width: fit-content;
 
     img {
@@ -224,6 +232,10 @@ p {
         border-radius: 2%;
         max-width: 550px;
     }
+}
+
+.textContainer {
+    padding: 5%;
 }
 
 @media (max-width: 800px) {
@@ -419,6 +431,12 @@ p {
             ;
         }
     }
+
+    .ContainerSection2 {
+        h2 {
+            text-align: center;
+        }
+    }
 }
 
 /*-----------------------------------------------------------------*/
@@ -463,7 +481,7 @@ p {
     }
 
     .item2 {
-        background-image: url("../images/gyoza.jpeg");
+        background-image: url("../images/kaiseki2.jpeg");
     }
 
     .item3 {
@@ -536,7 +554,9 @@ p {
     margin: 0 30px 30px 30px;
     border-radius: 4px;
     background-color: #2C363F;
-    box-shadow: 3px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    -webkit-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    -moz-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
 
     label {
         font-family: 'montserrat';
@@ -560,6 +580,11 @@ p {
             color: #ffffff;
             border: 2px solid #ffffff;
             font-weight: 600;
+
+            &:hover {
+                background-color: #F2F5EA;
+                color: $azulmarino;
+            }
         }
     }
 }

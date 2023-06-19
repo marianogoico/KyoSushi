@@ -73,11 +73,11 @@ p {
   margin-right: 10px;
 }
 .navbar-collapse ul li {
-  margin: 0 0.5vw 0 0.5vw;
+  margin: 0 0vw 0 0vw;
   width: fit-content;
 }
 .navbar-collapse ul li a {
-  color: #F2F5EA;
+  color: #fffcef;
   transition: 0.3s;
 }
 .navbar-collapse ul li a:hover {
@@ -116,6 +116,7 @@ p {
   background-image: url("../images/fondosushi (2).jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .mainContent h1 {
@@ -131,7 +132,7 @@ p {
 .fondoSection2 {
   color: #fffae2;
   width: auto;
-  min-height: 105%;
+  min-height: 110%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -180,13 +181,17 @@ p {
   display: inline-block;
   margin: 20px;
   font-size: 20px;
+  box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+  -webkit-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+  -moz-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
 }
 .art3container h3 {
   font-size: 40px;
 }
 
 .imgContainer {
-  border: 1px solid rgb(0, 0, 0);
+  border: 0px solid rgb(245, 245, 245);
+  background-color: #ffffff;
   width: fit-content;
 }
 .imgContainer img {
@@ -195,6 +200,10 @@ p {
   height: auto;
   border-radius: 2%;
   max-width: 550px;
+}
+
+.textContainer {
+  padding: 5%;
 }
 
 @media (max-width: 800px) {
@@ -357,6 +366,9 @@ p {
   .menuSection2 article img {
     display: none;
   }
+  .ContainerSection2 h2 {
+    text-align: center;
+  }
 }
 /*-----------------------------------------------------------------*/
 /*Galeria*/
@@ -392,7 +404,7 @@ p {
   background-image: url("../images/sushi2.jpeg");
 }
 .grid-container .item2 {
-  background-image: url("../images/gyoza.jpeg");
+  background-image: url("../images/kaiseki2.jpeg");
 }
 .grid-container .item3 {
   background-image: url("../images/restaurant1.jpg");
@@ -450,7 +462,9 @@ p {
   margin: 0 30px 30px 30px;
   border-radius: 4px;
   background-color: #2C363F;
-  box-shadow: 3px 5px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+  -webkit-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+  -moz-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
 }
 .form label {
   font-family: "montserrat";
@@ -472,6 +486,10 @@ p {
   color: #ffffff;
   border: 2px solid #ffffff;
   font-weight: 600;
+}
+.form .text-right input:hover {
+  background-color: #F2F5EA;
+  color: #2C363F;
 }
 
 @media (max-width: 576px) {
