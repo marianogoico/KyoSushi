@@ -45,6 +45,24 @@ p {
 
 $azulmarino: #2C363F;
 
+%h1secundario {
+    font-size: 80px;
+    font-family: 'Century Gothic, sans-serif';
+    font-weight: 500;
+}
+
+@mixin card($alto, $ancho) {
+    border-radius: 5px;
+    height: $alto;
+    width: $ancho;
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    -webkit-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    -moz-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+}
+
 /*--------------------------------------------------------------------*/
 /* header*/
 
@@ -97,12 +115,6 @@ $azulmarino: #2C363F;
     }
 }
 
-@media (max-width: 768px) {
-    .brandImg {
-        height: 50px;
-        width: auto;
-    }
-}
 
 /*-----------------------------------------------------------------*/
 /*footer*/
@@ -206,14 +218,7 @@ $azulmarino: #2C363F;
 }
 
 .art3container {
-    height: 600px;
-    width: fit-content;
-    display: inline-block;
-    margin: 20px;
-    font-size: 20px;
-    box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
-    -webkit-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
-    -moz-box-shadow: -1px -1px 17px -2px rgba(120, 120, 120, 0.8);
+    @include card(fit-content, fit-content);
 
     h3 {
         font-size: 40px;
@@ -236,6 +241,8 @@ $azulmarino: #2C363F;
 
 .textContainer {
     padding: 5%;
+    height: fit-content;
+    width: fit-content;
 }
 
 @media (max-width: 800px) {
@@ -261,24 +268,23 @@ $azulmarino: #2C363F;
 /*Servicios*/
 
 .servicesSection1 {
-    color: #2C363F;
     width: 100%;
-    height: 100%;
-    text-align: center;
+    height: fit-content;
+    min-height: 100%;
 
-    div {
+    .textServices1 {
         padding: 50px;
 
         h1 {
-            font-size: 80px;
-            font-family: 'Century Gothic, sans-serif';
-            font-weight: 500;
+            @extend %h1secundario
         }
     }
 
 }
 
 .servicesSection2 {
+    min-height: 100%;
+    height: fit-content;
     color: #2C363F;
     background-color: #ffffff;
 
@@ -314,6 +320,19 @@ $azulmarino: #2C363F;
     }
 }
 
+.carousel {
+
+    .carousel-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        max-height: 700px;
+        max-width: 700px;
+    }
+}
+
 @media (max-width: 991px) {
     .servicesSection2 {
         article {
@@ -337,16 +356,12 @@ $azulmarino: #2C363F;
 .menuSection1 {
     width: 100%;
     height: 110%;
-    text-align: center;
 
     div {
-        padding-top: 5%;
+        padding: 50px;
 
         h1 {
-            color: #2C363F;
-            font-family: 'Century Gothic, sans-serif';
-            font-size: 80px;
-            font-weight: 500;
+            @extend %h1secundario
         }
     }
 }
@@ -448,9 +463,7 @@ $azulmarino: #2C363F;
         margin: 30px 0 30px 0;
 
         h1 {
-            color: #2C363F;
-            font-size: 80px;
-            font-family: 'Century Gothic, sans-serif';
+            @extend %h1secundario
         }
     }
 }
@@ -525,15 +538,6 @@ $azulmarino: #2C363F;
     }
 }
 
-@media (min-width: 600px) {
-    .wide {
-        grid-column: span 2;
-    }
-
-    .tall {
-        grid-row: span 2;
-    }
-}
 
 /*-----------------------------------------------------------------*/
 /*Contacto*/
@@ -543,9 +547,7 @@ $azulmarino: #2C363F;
     margin: 30px 0 30px 0;
 
     h1 {
-        color: #2C363F;
-        font-family: 'Century Gothic, sans-serif';
-        font-size: 80px;
+        @extend %h1secundario
     }
 }
 
@@ -586,6 +588,28 @@ $azulmarino: #2C363F;
                 color: $azulmarino;
             }
         }
+    }
+}
+
+
+@media (max-width: 801px) {
+    .brandImg {
+        height: 50px;
+        width: auto;
+    }
+
+    .imgContainer {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
     }
 }
 
