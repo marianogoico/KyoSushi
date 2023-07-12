@@ -255,26 +255,11 @@ $azulmarino: #2C363F;
     width: 100%;
     height: fit-content;
     min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-
     background-image: url(../images/servicios.jpeg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-    .textServices1 {
-        padding: 20px;
-
-        h1 {
-            padding: 0 15px 0 15px;
-            font-size: 100px;
-            color: #262626;
-            @extend %h1secundario
-        }
-    }
 
 }
 
@@ -326,24 +311,12 @@ $azulmarino: #2C363F;
     margin-bottom: 50px;
     width: 100%;
     height: 110%;
-    background-image: url(../images/menu2.jpeg);
+    background-image: url(../images/menu1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: start;
 
-    div {
-        padding: 30px;
-
-        h1 {
-            font-size: 100px;
-            color: #F2F5EA;
-            @extend %h1secundario
-        }
-    }
 }
 
 .ContainerSection2 {
@@ -566,6 +539,12 @@ $azulmarino: #2C363F;
         }
     }
 
+    .text-container {
+        h1 {
+            font-size: 0px;
+        }
+    }
+
     .fondoSection2 {
         div {
             display: flex;
@@ -583,6 +562,11 @@ $azulmarino: #2C363F;
             }
         }
     }
+
+    .fondoSection1 {
+        background-position: center;
+    }
+
 
 }
 
